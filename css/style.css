@@ -1,0 +1,18 @@
+/* main section */
+.w-70{
+    width:70%;
+}
+
+/* total prices */
+.w-50px{
+    width:50px;
+}
+td{
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+#total-border-css{
+    border-top: 2px solid rgb(42, 42, 42);
+}
+.td-border-none{
+    border-bottom:none;
+}
