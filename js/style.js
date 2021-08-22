@@ -1,52 +1,52 @@
+// FUNCTION NUMBER=(1)
+
+
+function buttons(buttonId, extraCostId, prices) {
+    document.getElementById(buttonId).addEventListener("click", function(){
+        document.getElementById(extraCostId).innerText = prices;
+        gettotal()
+    })
+}
+
+
 ///////////////
 //Memory//
 ///////////////
 
 // memory 8GB btn
-document.getElementById("memory-8GB-btn").addEventListener("click", function(){
-    document.getElementById('Extra-Memory-Cost').innerText = 0;
-    gettotal()
-})
+buttons("memory-8GB-btn", "Extra-Memory-Cost", 0)
+
 // memory 16GB btn
-document.getElementById("memory-16GB-btn").addEventListener("click", function(){
-    document.getElementById('Extra-Memory-Cost').innerText = 180;
-    gettotal()
-})
+buttons("memory-16GB-btn", "Extra-Memory-Cost", 180)
 
 ///////////////
 //storage//
 ///////////////
 
 // storage 256GB btn
-document.getElementById("storage-256GB-btn").addEventListener("click", function(){
-    document.getElementById('Extra-Storage-Cost').innerText = 0;
-    gettotal()
-})
+buttons("storage-256GB-btn", "Extra-Storage-Cost", 0)
+
 // storage 512GB btn
-document.getElementById("storage-512GB-btn").addEventListener("click", function(){
-    document.getElementById('Extra-Storage-Cost').innerText = 100;
-    gettotal()
-})
+buttons("storage-512GB-btn", "Extra-Storage-Cost", 100)
+
 // storage 1TB btn
-document.getElementById("storage-1TB-btn").addEventListener("click", function(){
-    document.getElementById('Extra-Storage-Cost').innerText = 250;
-    gettotal()
-})
+buttons("storage-1TB-btn", "Extra-Storage-Cost", 250)
 
 ///////////////
 //Delivery//
 ///////////////
 
 // free delivery btn
-document.getElementById("free-delivery").addEventListener("click", function(){
-    document.getElementById('delivery-Cost').innerText = 0;
-    gettotal()
-})
+buttons("free-delivery", "delivery-Cost", 0)
+
 // $20 delivery btn
-document.getElementById("$20-delivery").addEventListener("click", function(){
-    document.getElementById('delivery-Cost').innerText = 20;
-    gettotal()
-})
+buttons("$20-delivery", "delivery-Cost", 20)
+
+
+
+
+
+// FUNCTION NUMBER=(2)
 
 // total function
 function gettotal(){
@@ -55,7 +55,7 @@ function gettotal(){
     const memoryValueId = parseInt(document.getElementById('Extra-Memory-Cost').innerText)
     const storageValueId = parseInt(document.getElementById('Extra-Storage-Cost').innerText)
     const deliveryValueId = parseInt(document.getElementById('delivery-Cost').innerText)
-    const promoCode = "abcd"
+    const promoCode = "stevekaku"
 
     // total
 
